@@ -1,0 +1,45 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;    
+}
+
+body{
+height: 100vh;
+width: 100vw;
+background-color: black;   
+display: flex;
+justify-content: center;
+align-items: center; 
+}
+
+h2{
+color: white;
+font-size: 8rem;
+font-weight: 900;
+position: relative;
+overflow: hidden;
+z-index: 1;
+}
+
+h2::before{
+position: absolute;
+content: '';
+left: 110%;
+width: 120%;
+height: 100%;    
+background: linear-gradient(90deg, transparent 0%, black 5%, black 100%);
+animation: distortion 5.5s linear forwards;
+}
+
+@keyframes distortion {
+    0%{
+
+left: 110%
+    }
+  100%{
+left: -20%
+  }  
+}
+
+
